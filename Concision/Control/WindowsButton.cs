@@ -185,6 +185,9 @@ namespace Concision.Control
             this.Reposition();
             base.OnParentChanged(e);
         }
+        /// <summary>
+        /// 重新定位
+        /// </summary>
         protected void Reposition()
         {
             Form form = this.FindForm();
