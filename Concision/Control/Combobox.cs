@@ -189,7 +189,7 @@ namespace Concision.Control
         /// <summary>
         /// 下拉图标的颜色
         /// </summary>
-        public Color SymbolColor { get; set; } = Color.FromArgb(240, 240, 240);
+        public Color SymbolColor { get; set; } = Color.FromArgb(175, 175, 175);
         /// <summary>
         /// 下拉图标的大小
         /// </summary>
@@ -216,7 +216,7 @@ namespace Concision.Control
         private Int32 _heightExtra = 5;
         private const String SymbolDown = "▼";
         private SizeF _symbolSizeCache = SizeF.Empty;
-        private Single _symbolSize = 12F;
+        private Single _symbolSize = 10F;
         private Boolean _autoDropDownHeight = true;
         /********************************/
         public Combobox() : base()
@@ -224,10 +224,15 @@ namespace Concision.Control
             this._toolStripDropDown.AutoSize = false;
             this._toolStripDropDown.ItemAdded += this.ToolStripDropDown_ItemAdded;
             this._toolStripDropDown.ItemRemoved += this.ToolStripDropDown_ItemRemoved;
-
+            this.Size = new Size(250,35);
             this.DropDownWidth = 150;
+           
             this._toolStripDropDown.Height = 0;
+            this.Font = new Font("微软雅黑", 10.5F);
             this.ItemFont = new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134)));
+            this.NormalColor = Color.WhiteSmoke;
+            this.BackColor = this.NormalColor;
+            this.ForeColor = Color.FromArgb(90,90,90);
         }
         protected override void OnResize(EventArgs e)
         {
@@ -359,8 +364,8 @@ namespace Concision.Control
         /// 获取或设置该 Item 包含的值
         /// </summary>
         public Object Value { get; set; }
-        public Color HoverColor { get; set; } = Color.FromArgb(61, 195, 245);
-        public Color NormalColor { get; set; } = Color.FromArgb(240, 240, 240);
+        public Color HoverColor { get; set; } = Color.FromArgb(204,204,204);
+        public Color NormalColor { get; set; } = Color.WhiteSmoke;
         public Color PressColor { get; set; } = Color.FromArgb(175, 175, 175);
 
         public Color HoverForeColor { get; set; } = Color.FromArgb(240, 240, 240);

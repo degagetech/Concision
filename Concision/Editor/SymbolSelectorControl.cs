@@ -13,6 +13,7 @@ using System.Diagnostics;
 
 namespace Concision.Editor
 {
+    [ToolboxItem(false)]
     public partial class SymbolSelectorControl : UserControl
     {
         private static FieldInfo[] AwesomeFontFieldInfoCache = null;

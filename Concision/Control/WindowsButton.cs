@@ -105,7 +105,7 @@ namespace Concision.Control
                     case WindowsButtonType.Close:
                     default:
                         {
-                            this.Text = AwesomeFont.window_close_o;
+                            this.Text = AwesomeFont.close;
                             this._fnSendMessage = () =>
                             {
                                 Form parentForm = this.FindForm();
@@ -154,7 +154,7 @@ namespace Concision.Control
             }
         }
         /********************************/
-        private Color _normalColor = Color.FromArgb(61, 195, 245);
+        private Color _normalColor = Color.FromArgb(27, 166, 228);
         private Color _currentColor = Color.FromArgb(61, 195, 245);
         private Single _shadowWidth = 1;
         private Color _shadowColor = Color.FromArgb(150, 175, 175, 175);
@@ -172,17 +172,20 @@ namespace Concision.Control
             this.DoubleBuffered = true;
             this.ForeColor = Color.White;
             this.WindowsButtonType = WindowsButtonType.Close;
+            this.Anchor = AnchorStyles.Right | AnchorStyles.Top;
+            this._currentColor = this._normalColor;
+            this.Cursor = Cursors.Hand;
         }
 
 
         protected override void OnLayout(LayoutEventArgs levent)
         {
-            this.Reposition();
+            //this.Reposition();
             base.OnLayout(levent);
         }
         protected override void OnParentChanged(EventArgs e)
         {
-            this.Reposition();
+            //this.Reposition();
             base.OnParentChanged(e);
         }
         /// <summary>

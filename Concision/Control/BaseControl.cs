@@ -253,7 +253,7 @@ namespace Concision.Control
         }
         protected override void WndProc(ref Message m)
         {
-            if (this.EnabledMousePierce && !this.DesignMode)
+            if (!this.DesignMode && this.EnabledMousePierce)
             {
                 switch (m.Msg)
                 {

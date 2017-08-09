@@ -6,7 +6,6 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
 namespace Concision.Control
 {
     public class Shade : BaseControl
@@ -52,7 +51,9 @@ namespace Concision.Control
             this.SetStyle(ControlStyles.Opaque, true);
             this.FollowParentBackColor = false;
         }
- 
+
+     
+
         protected override void OnParentChanged(EventArgs e)
         {
             this.BringToFront();
@@ -61,11 +62,9 @@ namespace Concision.Control
 
         protected override void OnPaint(PaintEventArgs e)
         {
-
             Graphics g = e.Graphics;
             Color color = Color.FromArgb(this.Alpha, this.BackColor);
             Brush backBrush = new SolidBrush(color);
-
             g.FillRectangle(backBrush, this.ClientRectangle);
             if (this.EnabledDrawText)
             {
@@ -73,8 +72,8 @@ namespace Concision.Control
                 e.Graphics.DrawString(this.Text, this.Font, textBrush, this.ClientRectangle, this.TextAlignFormat);
                 textBrush.Dispose();
             }
-
             base.OnPaint(e);
         }
+        
     }
 }
