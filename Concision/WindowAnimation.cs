@@ -21,11 +21,11 @@ namespace Concision
         /// <summary>
         /// 显示标志位
         /// </summary>
-        public static Int32 ShowFlag { get; private set; } = WindowsConstants.AW_ACTIVATE;
+        public static Int32 ShowFlag { get; private set; } = Win32Constants.AW_ACTIVATE;
         /// <summary>
         /// 隐藏标志位
         /// </summary>
-        public static Int32 HideFlag { get; private set; } = WindowsConstants.AW_HIDE;
+        public static Int32 HideFlag { get; private set; } = Win32Constants.AW_HIDE;
         /************/
         /// <summary>
         /// 是否开启窗体动画
@@ -89,27 +89,27 @@ namespace Concision
         /// <summary>
         /// 自左往右滑动
         /// </summary>
-        LeftToRight = WindowsConstants.AW_SLIDE | WindowsConstants.AW_HOR_POSITIVE,
+        LeftToRight = Win32Constants.AW_SLIDE | Win32Constants.AW_HOR_POSITIVE,
         /// <summary>
         /// 自右往左滑动
         /// </summary>
-        RightToLeft = WindowsConstants.AW_SLIDE | WindowsConstants.AW_HOR_NEGATIVE,
+        RightToLeft = Win32Constants.AW_SLIDE | Win32Constants.AW_HOR_NEGATIVE,
         /// <summary>
         /// 淡入淡出效果
         /// </summary>
-        Fade = WindowsConstants.AW_BLEND,
+        Fade = Win32Constants.AW_BLEND,
         /// <summary>
         ///扩散
         /// </summary>
-        Center = WindowsConstants.AW_CENTER,
+        Center = Win32Constants.AW_CENTER,
         /// <summary>
         /// 自上而下滑动
         /// </summary>
-        TopToBottom = WindowsConstants.AW_SLIDE | WindowsConstants.AW_VER_POSITIVE,
+        TopToBottom = Win32Constants.AW_SLIDE | Win32Constants.AW_VER_POSITIVE,
         /// <summary>
         /// 自下而上滑动
         /// </summary>
-        BottomToTop = WindowsConstants.AW_SLIDE | WindowsConstants.AW_VER_NEGATIVE
+        BottomToTop = Win32Constants.AW_SLIDE | Win32Constants.AW_VER_NEGATIVE
 
     }
     public class WindowAnimationTypeConverter : TypeConverter

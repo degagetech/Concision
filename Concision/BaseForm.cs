@@ -66,7 +66,7 @@ namespace Concision
         {
             if (this.Animation.Enabled)
             {
-                WindowsApi.AnimateWindow(this.Handle, this.Animation.AnimationTime,
+                Win32API.AnimateWindow(this.Handle, this.Animation.AnimationTime,
                     this.Animation.ShowAnimationFlag());
             }
             base.OnLoad(e);
@@ -75,7 +75,7 @@ namespace Concision
         {
             if (this.Animation.Enabled)
             {
-                WindowsApi.AnimateWindow(this.Handle, this.Animation.AnimationTime,
+                Win32API.AnimateWindow(this.Handle, this.Animation.AnimationTime,
                  this.Animation.HideAnimationFlag());
             }
             base.OnClosed(e);

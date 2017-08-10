@@ -142,19 +142,7 @@ namespace Concision.Control
             this.ReleaseBrush(nrlBrush, shadowBrush, textBrush);
             base.OnPaint(pevent);
         }
-        //TODO:按钮的圆角绘制
-        private void DrawRound(RoundStyle round, Graphics g)
-        {
-            switch (round)
-            {
-                default:
-                case RoundStyle.All:
-                    {
-                        //暂不绘制圆角
-                    }
-                    break;
-            }
-        }
+
 
 
         protected override void OnMouseEnter(EventArgs e)

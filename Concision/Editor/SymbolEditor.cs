@@ -31,6 +31,8 @@ namespace Concision.Editor
                  editControl.Refresh();
                 edSvc.DropDownControl(editControl);
                 selected = editControl.PatternSelected;
+                edSvc = null;
+                editControl = null;
             }
             return selected;
         }

@@ -61,6 +61,7 @@ namespace Concision.Control
         public Scutcheon() : base()
         {
             this.ScutcheonColor = Color.FromArgb(27, 166, 228);
+            this.DoubleBuffered = true;
             this.ForeColor = Color.White;
         }
 

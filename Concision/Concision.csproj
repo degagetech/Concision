@@ -72,7 +72,7 @@
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Math.cs" />
-    <Compile Include="Win32Utility.cs" />
+    <Compile Include="Win32\Win32Utility.cs" />
     <Compile Include="WindowAnimation.cs" />
     <Compile Include="AwesomeFont.cs" />
     <Compile Include="BaseForm.cs">
@@ -109,15 +109,15 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Control\RoundStyle.cs" />
+    <Compile Include="RoundStyle.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="WindowsApi.cs" />
-    <Compile Include="WindowsConstants.cs" />
-    <Compile Include="WindowsStruct.cs" />
+    <Compile Include="Win32\Win32API.cs" />
+    <Compile Include="Win32\Win32Constants.cs" />
+    <Compile Include="Win32\Win32Struct.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BaseForm.resx">

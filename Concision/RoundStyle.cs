@@ -1,11 +1,11 @@
 ﻿
 
-namespace Concision.Control
+namespace Concision
 {
     /// <summary>
     ///  圆角类型
     /// </summary>
-    public enum RoundStyle
+    public enum RoundStyles
     {
         Node,
         All,

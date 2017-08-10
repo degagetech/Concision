@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Concision;
+using System.IO.Ports;
+
 namespace TestUnit
 {
     static class Program
@@ -13,6 +15,8 @@ namespace TestUnit
         [STAThread]
         static void Main()
         {
+            
+
             Application.EnableVisualStyles();
             AppDomain.CurrentDomain.FirstChanceException += CurrentDomain_FirstChanceException;
             Application.SetCompatibleTextRenderingDefault(false);

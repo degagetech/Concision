@@ -8,7 +8,7 @@ namespace Concision
     /// <summary>
     /// windows 消息常量
     /// </summary>
-    public class WindowsConstants
+    public class Win32Constants
     {
         public const int WM_NULL = 0x0000; //   
         public const int WM_CREATE = 0x0001; //应用程序创建一个窗口   

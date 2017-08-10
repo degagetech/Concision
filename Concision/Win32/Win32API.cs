@@ -5,7 +5,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 namespace Concision
 {
-    public class WindowsApi
+    public class Win32API
     {
         [DllImport("user32.dll",CharSet =CharSet.Auto)]
         public static extern Int32 SendMessage(IntPtr hWnd, Int32 wMsg,

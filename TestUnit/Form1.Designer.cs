@@ -36,6 +36,7 @@
             this.shade1 = new Concision.Control.Shade();
             this.panel1 = new Concision.Control.Panel();
             this.windowsButton1 = new Concision.Control.WindowsButton();
+            this.symbol1 = new Concision.Control.Symbol();
             this.SuspendLayout();
             // 
             // combobox1
@@ -47,6 +48,7 @@
             this.combobox1.DropDownWidth = 150;
             this.combobox1.EnabledMousePierce = false;
             this.combobox1.EnabledWaitingClick = false;
+            this.combobox1.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.combobox1.ForeColor = System.Drawing.Color.White;
             this.combobox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.combobox1.IsWaiting = false;
@@ -101,7 +103,7 @@
             // 
             this.scutcheon3.EnabledMousePierce = false;
             this.scutcheon3.ForeColor = System.Drawing.Color.White;
-            this.scutcheon3.Location = new System.Drawing.Point(25, 325);
+            this.scutcheon3.Location = new System.Drawing.Point(165, 409);
             this.scutcheon3.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon3.Name = "scutcheon3";
             this.scutcheon3.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
@@ -138,7 +140,7 @@
             this.shade1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.shade1.EnabledDrawText = true;
             this.shade1.EnabledMousePierce = false;
-            this.shade1.Location = new System.Drawing.Point(25, 36);
+            this.shade1.Location = new System.Drawing.Point(106, 36);
             this.shade1.Margin = new System.Windows.Forms.Padding(0);
             this.shade1.Name = "shade1";
             this.shade1.Size = new System.Drawing.Size(464, 337);
@@ -153,7 +155,7 @@
             this.panel1.BorderWith = 2;
             this.panel1.EnabledMousePierce = false;
             this.panel1.IsDrawBorder = true;
-            this.panel1.Location = new System.Drawing.Point(404, 199);
+            this.panel1.Location = new System.Drawing.Point(492, 121);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 252);
             this.panel1.TabIndex = 11;
@@ -161,6 +163,7 @@
             // windowsButton1
             // 
             this.windowsButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.windowsButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsButton1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.windowsButton1.EnabledAdsorb = true;
             this.windowsButton1.EnabledMousePierce = false;
@@ -168,7 +171,7 @@
             this.windowsButton1.ForeColor = System.Drawing.Color.White;
             this.windowsButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.windowsButton1.IconSize = 10F;
-            this.windowsButton1.Location = new System.Drawing.Point(605, 53);
+            this.windowsButton1.Location = new System.Drawing.Point(663, 53);
             this.windowsButton1.Margin = new System.Windows.Forms.Padding(0);
             this.windowsButton1.Name = "windowsButton1";
             this.windowsButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(195)))), ((int)(((byte)(245)))));
@@ -178,13 +181,33 @@
             this.windowsButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.windowsButton1.WindowsButtonType = Concision.Control.WindowsButtonType.Maximize;
             // 
+            // symbol1
+            // 
+            this.symbol1.EnabledMousePierce = false;
+            this.symbol1.Font = new System.Drawing.Font("FontAwesome", 10F);
+            this.symbol1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.symbol1.Location = new System.Drawing.Point(389, 386);
+            this.symbol1.Margin = new System.Windows.Forms.Padding(0);
+            this.symbol1.Name = "symbol1";
+            this.symbol1.Size = new System.Drawing.Size(100, 100);
+            this.symbol1.SymbolColor = System.Drawing.SystemColors.ControlText;
+            this.symbol1.SymbolPattern = "";
+            this.symbol1.SymbolSize = 10F;
+            this.symbol1.TabIndex = 13;
+            this.symbol1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
+            this.Animation.AnimationTime = 200;
+            this.Animation.Enabled = true;
+            this.Animation.HideEffect = Concision.WindowAnimationStyle.Fade;
+            this.Animation.ShowEffect = Concision.WindowAnimationStyle.Center;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 478);
-            this.Controls.Add(this.windowsButton1);
+            this.ClientSize = new System.Drawing.Size(744, 495);
             this.Controls.Add(this.shade1);
+            this.Controls.Add(this.symbol1);
+            this.Controls.Add(this.windowsButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.scutcheon3);
@@ -208,6 +231,7 @@
         private Concision.Control.Shade shade1;
         private Concision.Control.Panel panel1;
         private Concision.Control.WindowsButton windowsButton1;
+        private Concision.Control.Symbol symbol1;
     }
 }
 

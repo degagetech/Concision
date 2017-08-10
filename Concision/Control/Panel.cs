@@ -60,21 +60,21 @@ namespace Concision.Control
             {
                 switch (m.Msg)
                 {
-                    case WindowsConstants.WM_MOUSEACTIVATE:
-                    case WindowsConstants.WM_MOUSEFIRST:
-                    case WindowsConstants.WM_MOUSEHOVER:
-                    case WindowsConstants.WM_MOUSELAST:
-                    case WindowsConstants.WM_MOUSELEAVE:
-                    case WindowsConstants.WM_LBUTTONDOWN:
-                    case WindowsConstants.WM_LBUTTONUP:
-                    case WindowsConstants.WM_LBUTTONDBLCLK:
-                    case WindowsConstants.WM_RBUTTONDOWN:
-                    case WindowsConstants.WM_RBUTTONUP:
-                    case WindowsConstants.WM_RBUTTONDBLCLK:
-                    case WindowsConstants.WM_MBUTTONDOWN:
-                    case WindowsConstants.WM_MBUTTONUP:
-                    case WindowsConstants.WM_MBUTTONDBLCLK:
-                    case WindowsConstants.WM_NCHITTEST:
+                    case Win32Constants.WM_MOUSEACTIVATE:
+                    case Win32Constants.WM_MOUSEFIRST:
+                    case Win32Constants.WM_MOUSEHOVER:
+                    case Win32Constants.WM_MOUSELAST:
+                    case Win32Constants.WM_MOUSELEAVE:
+                    case Win32Constants.WM_LBUTTONDOWN:
+                    case Win32Constants.WM_LBUTTONUP:
+                    case Win32Constants.WM_LBUTTONDBLCLK:
+                    case Win32Constants.WM_RBUTTONDOWN:
+                    case Win32Constants.WM_RBUTTONUP:
+                    case Win32Constants.WM_RBUTTONDBLCLK:
+                    case Win32Constants.WM_MBUTTONDOWN:
+                    case Win32Constants.WM_MBUTTONUP:
+                    case Win32Constants.WM_MBUTTONDBLCLK:
+                    case Win32Constants.WM_NCHITTEST:
                         {
                             //将返回值置为 -1 表示交由父控件处理
                             m.Result = (IntPtr)(-1);

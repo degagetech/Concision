@@ -23,12 +23,12 @@ namespace Concision
             if (control is ComboBox)
             {
                 COMBOBOXINFO info = GetComboBoxInfo(control);
-                WindowsApi.SendMessage(info.hwndItem, WindowsConstants.EM_SETCUEBANNER, 0, text);
+                Win32API.SendMessage(info.hwndItem, Win32Constants.EM_SETCUEBANNER, 0, text);
            
             }
             else
             {
-                WindowsApi.SendMessage(control.Handle,WindowsConstants.EM_SETCUEBANNER, 0, text);
+                Win32API.SendMessage(control.Handle,Win32Constants.EM_SETCUEBANNER, 0, text);
             }
         }
 
@@ -36,7 +36,7 @@ namespace Concision
         {
             COMBOBOXINFO info = new COMBOBOXINFO();
             info.cbSize = Marshal.SizeOf(info);
-            WindowsApi.GetComboBoxInfo(control.Handle, ref info);
+            Win32API.GetComboBoxInfo(control.Handle, ref info);
             return info;
         }
 
@@ -47,12 +47,12 @@ namespace Concision
             {
                 COMBOBOXINFO info = new COMBOBOXINFO();
                 info.cbSize = Marshal.SizeOf(info);
-                WindowsApi.GetComboBoxInfo(control.Handle, ref info);
-               WindowsApi.SendMessage(info.hwndItem, WindowsConstants.EM_GETCUEBANNER, 0, builder);
+                Win32API.GetComboBoxInfo(control.Handle, ref info);
+               Win32API.SendMessage(info.hwndItem, Win32Constants.EM_GETCUEBANNER, 0, builder);
             }
             else
             {
-                WindowsApi.SendMessage(control.Handle, WindowsConstants.EM_GETCUEBANNER, 0, builder);
+                Win32API.SendMessage(control.Handle, Win32Constants.EM_GETCUEBANNER, 0, builder);
             }
             return builder.ToString();
         }

@@ -109,6 +109,7 @@ namespace Concision.Control
         public Symbol()
         {
             this.Font = new Font(AwesomeFont.FontFamily, 15);
+            this.DoubleBuffered = true;
         }
 
         protected override void OnPaint(PaintEventArgs pevent)
@@ -117,6 +118,7 @@ namespace Concision.Control
             {
                 Graphics g = pevent.Graphics;
                 g.SmoothingMode = SmoothingMode.AntiAlias;
+                g.CompositingQuality = CompositingQuality.HighQuality;
                 Brush textBrush = new SolidBrush(this.ForeColor);
                 RectangleF rect = new RectangleF(new PointF(0, 0), this.Size);
                 //SizeF patternSize = g.MeasureString(this.SymbolPattern, this.Font);
