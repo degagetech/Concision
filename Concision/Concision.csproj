@@ -72,6 +72,7 @@
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Math.cs" />
+    <Compile Include="Win32Utility.cs" />
     <Compile Include="WindowAnimation.cs" />
     <Compile Include="AwesomeFont.cs" />
     <Compile Include="BaseForm.cs">

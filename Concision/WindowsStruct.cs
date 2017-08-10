@@ -17,4 +17,24 @@ namespace Concision
         public Int32 nPos;
         public Int32 nTrackPos;
     }
+    [StructLayout(LayoutKind.Sequential)]
+    public struct COMBOBOXINFO
+    {
+        public int cbSize;
+        public RECT rcItem;
+        public RECT rcButton;
+        public IntPtr stateButton;
+        public IntPtr hwndCombo;
+        public IntPtr hwndItem;
+        public IntPtr hwndList;
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct RECT
+    {
+        public int left;
+        public int top;
+        public int right;
+        public int bottom;
+    }
 }

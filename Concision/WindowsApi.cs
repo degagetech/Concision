@@ -7,8 +7,18 @@ namespace Concision
 {
     public class WindowsApi
     {
-        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        [DllImport("user32.dll",CharSet =CharSet.Auto)]
+        public static extern Int32 SendMessage(IntPtr hWnd, Int32 wMsg,
+         Int32 wParam, [MarshalAs(UnmanagedType.LPWStr)] String lParam);
+
+        [DllImport("user32.dll")]
+        public static extern Boolean SendMessage(IntPtr hwnd, int msg, int wParam, StringBuilder lParam);
+
+        [DllImport("user32.dll")]
         public static extern Int32 SendMessage(IntPtr hwnd, Int32 wMsg, Int32 wParam, Int32 lParam);
+
+        [DllImport("user32.dll")]
+        public static extern Boolean GetComboBoxInfo(IntPtr hwnd, ref COMBOBOXINFO pcbi);
 
         /// <summary>
         /// 该函数能在显示与隐藏窗口时能产生特殊的效果。

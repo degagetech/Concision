@@ -240,6 +240,9 @@ namespace Concision
         public const int WM_APP = 0x8000; //   
         public const int WM_USER = 0x0400; //此消息能帮助应用程序自定义私有消息；  
 
+        public const int EM_SETCUEBANNER = 0x1501;
+        public const int EM_GETCUEBANNER = 0x1502;
+
 
         public const int SC_SIZE = 0xF000;
         public const int SC_MOVE = 0xF010;
