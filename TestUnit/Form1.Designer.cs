@@ -35,9 +35,14 @@
             this.button1 = new Concision.Control.Button();
             this.shade1 = new Concision.Control.Shade();
             this.panel1 = new Concision.Control.Panel();
-            this.windowsButton1 = new Concision.Control.WindowsButton();
             this.symbol1 = new Concision.Control.Symbol();
+            this.combobox2 = new Concision.Control.Combobox();
             this.SuspendLayout();
+            // 
+            // line1
+            // 
+            this.line1.LineLength = 856;
+            this.line1.Size = new System.Drawing.Size(856, 2);
             // 
             // combobox1
             // 
@@ -140,10 +145,10 @@
             this.shade1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.shade1.EnabledDrawText = true;
             this.shade1.EnabledMousePierce = false;
-            this.shade1.Location = new System.Drawing.Point(106, 36);
+            this.shade1.Location = new System.Drawing.Point(79, 49);
             this.shade1.Margin = new System.Windows.Forms.Padding(0);
             this.shade1.Name = "shade1";
-            this.shade1.Size = new System.Drawing.Size(464, 337);
+            this.shade1.Size = new System.Drawing.Size(484, 360);
             this.shade1.TabIndex = 10;
             this.shade1.Text = "遮罩";
             this.shade1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,27 +165,6 @@
             this.panel1.Size = new System.Drawing.Size(205, 252);
             this.panel1.TabIndex = 11;
             // 
-            // windowsButton1
-            // 
-            this.windowsButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.windowsButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.windowsButton1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.windowsButton1.EnabledAdsorb = true;
-            this.windowsButton1.EnabledMousePierce = false;
-            this.windowsButton1.Font = new System.Drawing.Font("FontAwesome", 10F);
-            this.windowsButton1.ForeColor = System.Drawing.Color.White;
-            this.windowsButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
-            this.windowsButton1.IconSize = 10F;
-            this.windowsButton1.Location = new System.Drawing.Point(663, 53);
-            this.windowsButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.windowsButton1.Name = "windowsButton1";
-            this.windowsButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(195)))), ((int)(((byte)(245)))));
-            this.windowsButton1.Size = new System.Drawing.Size(40, 35);
-            this.windowsButton1.TabIndex = 12;
-            this.windowsButton1.Text = "";
-            this.windowsButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.windowsButton1.WindowsButtonType = Concision.Control.WindowsButtonType.Maximize;
-            // 
             // symbol1
             // 
             this.symbol1.EnabledMousePierce = false;
@@ -196,6 +180,34 @@
             this.symbol1.TabIndex = 13;
             this.symbol1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // combobox2
+            // 
+            this.combobox2.AutoDropDownHeight = true;
+            this.combobox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combobox2.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.combobox2.DropDownHeight = 0;
+            this.combobox2.DropDownWidth = 150;
+            this.combobox2.EnabledMousePierce = false;
+            this.combobox2.EnabledWaitingClick = false;
+            this.combobox2.Font = new System.Drawing.Font("微软雅黑", 10.5F);
+            this.combobox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.combobox2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.combobox2.IsWaiting = false;
+            this.combobox2.ItemFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.combobox2.ItemHeight = 20;
+            this.combobox2.Location = new System.Drawing.Point(511, 422);
+            this.combobox2.Margin = new System.Windows.Forms.Padding(0);
+            this.combobox2.Name = "combobox2";
+            this.combobox2.NormalColor = System.Drawing.Color.WhiteSmoke;
+            this.combobox2.SelectedIndex = -1;
+            this.combobox2.SelectedText = null;
+            this.combobox2.Size = new System.Drawing.Size(250, 35);
+            this.combobox2.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.combobox2.SymbolSize = 10F;
+            this.combobox2.TabIndex = 14;
+            this.combobox2.Text = "combobox2";
+            this.combobox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.Animation.AnimationTime = 200;
@@ -204,10 +216,10 @@
             this.Animation.ShowEffect = Concision.WindowAnimationStyle.Center;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 495);
+            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.combobox2);
             this.Controls.Add(this.shade1);
             this.Controls.Add(this.symbol1);
-            this.Controls.Add(this.windowsButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.scutcheon3);
@@ -218,6 +230,16 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.SetChildIndex(this.combobox1, 0);
+            this.Controls.SetChildIndex(this.scutcheon1, 0);
+            this.Controls.SetChildIndex(this.scutcheon2, 0);
+            this.Controls.SetChildIndex(this.scutcheon3, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.symbol1, 0);
+            this.Controls.SetChildIndex(this.line1, 0);
+            this.Controls.SetChildIndex(this.shade1, 0);
+            this.Controls.SetChildIndex(this.combobox2, 0);
             this.ResumeLayout(false);
 
         }
@@ -230,8 +252,8 @@
         private Concision.Control.Button button1;
         private Concision.Control.Shade shade1;
         private Concision.Control.Panel panel1;
-        private Concision.Control.WindowsButton windowsButton1;
         private Concision.Control.Symbol symbol1;
+        private Concision.Control.Combobox combobox2;
     }
 }
 

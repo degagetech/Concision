@@ -64,12 +64,24 @@
     <Compile Include="Control\Shade.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarkForm.Designer.cs">
+      <DependentUpon>DarkForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Editor\SymbolEditor.cs" />
     <Compile Include="Editor\SymbolSelectorControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Editor\SymbolSelectorControl.Designer.cs">
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightForm.Designer.cs">
+      <DependentUpon>LightForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Math.cs" />
     <Compile Include="Win32\Win32Utility.cs" />
@@ -123,8 +135,14 @@
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DarkForm.resx">
+      <DependentUpon>DarkForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editor\SymbolSelectorControl.resx">
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightForm.resx">
+      <DependentUpon>LightForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

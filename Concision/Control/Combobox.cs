@@ -53,16 +53,10 @@ namespace Concision.Control
             }
             set
             {
-                if (this.ItemCount > 0 && value >= 0)
+                if (this.ItemCount > 0 && value >= 0 && value < this.ItemCount)
                 {
-                    foreach (ComboboxToolStripItem item in this._toolStripDropDown.Items)
-                    {
-                        if (item.Index == value)
-                        {
-                            this.OnSelectItemChanged(this, item);
-                            break;
-                        }
-                    }
+                    ComboboxToolStripItem item = (ComboboxToolStripItem)this._toolStripDropDown.Items[value];
+                    this.OnSelectItemChanged(this, item);
                 }
             }
         }
@@ -224,15 +218,15 @@ namespace Concision.Control
             this._toolStripDropDown.AutoSize = false;
             this._toolStripDropDown.ItemAdded += this.ToolStripDropDown_ItemAdded;
             this._toolStripDropDown.ItemRemoved += this.ToolStripDropDown_ItemRemoved;
-            this.Size = new Size(250,35);
+            this.Size = new Size(250, 35);
             this.DropDownWidth = 150;
-           
+
             this._toolStripDropDown.Height = 0;
             this.Font = new Font("微软雅黑", 10.5F);
             this.ItemFont = new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134)));
             this.NormalColor = Color.WhiteSmoke;
             this.BackColor = this.NormalColor;
-            this.ForeColor = Color.FromArgb(90,90,90);
+            this.ForeColor = Color.FromArgb(90, 90, 90);
         }
         protected override void OnResize(EventArgs e)
         {
@@ -304,6 +298,7 @@ namespace Concision.Control
             base.OnPaint(pevent);
             g.DrawString(SymbolDown, new Font(this.Font.FontFamily, this._symbolSize), brush, this.Width - size.Width.RoundToInt32() - (0.05 * this.Width).RoundToInt32(), ((this.Height - size.Height) / 2.0F).RoundToInt32());
             brush.Dispose();
+            g.Dispose();
         }
         protected SizeF CalcuteSymbolSize(Graphics g, Boolean force = false)
         {
@@ -319,7 +314,7 @@ namespace Concision.Control
             this._toolStripDropDown.Show(this, 3, this.Height);
             this.DropDownShown = true;
             base.OnClick(e);
-            
+
         }
         private void ToolStripDropDown_ItemRemoved(Object sender, ToolStripItemEventArgs e)
         {
@@ -364,7 +359,7 @@ namespace Concision.Control
         /// 获取或设置该 Item 包含的值
         /// </summary>
         public Object Value { get; set; }
-        public Color HoverColor { get; set; } = Color.FromArgb(204,204,204);
+        public Color HoverColor { get; set; } = Color.FromArgb(204, 204, 204);
         public Color NormalColor { get; set; } = Color.WhiteSmoke;
         public Color PressColor { get; set; } = Color.FromArgb(175, 175, 175);
 

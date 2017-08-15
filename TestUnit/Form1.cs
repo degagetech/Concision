@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Concision;
+using System.Runtime.InteropServices;
+
 namespace TestUnit
 {
-    public partial class Form1 : BaseForm
+    public partial class Form1 : DarkForm
     {
         public Form1()
         {
@@ -30,8 +32,9 @@ namespace TestUnit
 
                     this.symbol1.SymbolSize += (asc?num:-num);
                     this.scutcheon3.Text = this.symbol1.SymbolSize.ToString();
+             
                     return true;
-                },10
+                },5
                 );
             //this.combobox1.AddRange
             this.combobox1.Add("国土局");

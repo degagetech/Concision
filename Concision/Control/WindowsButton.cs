@@ -19,8 +19,6 @@ namespace Concision.Control
 
     public class WindowsButton : BaseControl
     {
-        [Description("开启后系统按钮将始终保持与父窗体上边框和右边框的距离")]
-        public Boolean EnabledAdsorb { get; set; } = true;
         [Description("系统按钮正常时的颜色")]
         public Color NormalColor
         {
@@ -153,6 +151,10 @@ namespace Concision.Control
                 base.Font = value;
             }
         }
+        [Description("阴影颜色")]
+        public Color ShadowColor { get => _shadowColor; set => _shadowColor = value; }
+        [Description("阴影宽度")]
+        public Single ShadowWidth { get => _shadowWidth; set => _shadowWidth = value; }
         /********************************/
         private Color _normalColor = Color.FromArgb(27, 166, 228);
         private Color _currentColor = Color.FromArgb(61, 195, 245);
@@ -188,25 +190,25 @@ namespace Concision.Control
             //this.Reposition();
             base.OnParentChanged(e);
         }
-        /// <summary>
-        /// 重新定位
-        /// </summary>
-        protected void Reposition()
-        {
-            Form form = this.FindForm();
-            if (form != null && form.Handle!=this._formHandler)
-            {
-                this._formHandler = form.Handle;
-                this._adsorbPoint = new Point(form.Width - this.Location.X, this.Location.Y);
-                form.Resize += (s, ev) =>
-                {
-                    if (this.EnabledAdsorb)
-                    {
-                        this.Location = new Point(form.Width - this._adsorbPoint.X, this.Location.Y);
-                    }
-                };
-            }
-        }
+        ///// <summary>
+        ///// 重新定位
+        ///// </summary>
+        //protected void Reposition()
+        //{
+        //    Form form = this.FindForm();
+        //    if (form != null && form.Handle!=this._formHandler)
+        //    {
+        //        this._formHandler = form.Handle;
+        //        this._adsorbPoint = new Point(form.Width - this.Location.X, this.Location.Y);
+        //        form.Resize += (s, ev) =>
+        //        {
+        //            if (this.EnabledAdsorb)
+        //            {
+        //                this.Location = new Point(form.Width - this._adsorbPoint.X, this.Location.Y);
+        //            }
+        //        };
+        //    }
+        //}
         protected override void OnPaint(PaintEventArgs pevent)
         {
 

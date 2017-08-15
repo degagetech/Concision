@@ -1,6 +1,6 @@
-﻿namespace Concision
+﻿namespace TestUnit
 {
-    partial class BaseForm
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.SuspendLayout();
             // 
-            // BaseForm
+            // windowsButton3
             // 
+            this.windowsButton3.Location = new System.Drawing.Point(664, 11);
+            // 
+            // Form2
+            // 
+            this.Animation.AnimationTime = 200;
+            this.Animation.Enabled = true;
+            this.Animation.HideEffect = Concision.WindowAnimationStyle.Fade;
+            this.Animation.ShowEffect = Concision.WindowAnimationStyle.Center;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "BaseForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BaseForm";
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
