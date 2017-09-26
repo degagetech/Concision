@@ -152,7 +152,7 @@ namespace Concision.Control
         /// <summary>
         /// 获取或设置下拉条目的高度
         /// </summary>
-        public Int32 ItemHeight { get; set; } = 20;
+        public Int32 ItemHeight { get; set; } = 30;
 
         public ToolStripItemCollection Items
         {
@@ -219,7 +219,7 @@ namespace Concision.Control
             this._toolStripDropDown.ItemAdded += this.ToolStripDropDown_ItemAdded;
             this._toolStripDropDown.ItemRemoved += this.ToolStripDropDown_ItemRemoved;
             this.Size = new Size(250, 35);
-            this.DropDownWidth = 150;
+            this.DropDownWidth = 250;
 
             this._toolStripDropDown.Height = 0;
             this.Font = new Font("微软雅黑", 10.5F);
@@ -255,7 +255,9 @@ namespace Concision.Control
         public void Add(String text, Object value = null, String name = null)
         {
             ComboboxToolStripItem item = new ComboboxToolStripItem();
+            item.Padding = new Padding();
             item.Text = text;
+         
             item.Size = new Size(this._toolStripDropDown.Width, this.ItemHeight);
             item.AutoSize = false;
             item.Value = value;
@@ -371,23 +373,19 @@ namespace Concision.Control
 
         public ComboboxToolStripItem()
         {
-
             this.BackColor = this.NormalColor;
             this.ForeColor = this.NormalForeColor;
-
         }
         protected override void OnMouseHover(EventArgs e)
         {
             this.BackColor = this.HoverColor;
             this.ForeColor = this.HoverForeColor;
-            this.Invalidate();
             base.OnMouseHover(e);
         }
         protected override void OnMouseLeave(EventArgs e)
         {
             this.BackColor = this.NormalColor;
             this.ForeColor = this.NormalForeColor;
-            this.Invalidate();
             base.OnMouseLeave(e);
         }
         protected override void OnMouseDown(MouseEventArgs e)
@@ -395,20 +393,19 @@ namespace Concision.Control
 
             this.BackColor = this.PressColor;
             this.ForeColor = this.PressForeColor;
-            this.Invalidate();
             base.OnMouseDown(e);
         }
         protected override void OnMouseUp(MouseEventArgs e)
         {
             this.BackColor = this.HoverColor;
             this.ForeColor = this.HoverForeColor;
-            this.Invalidate();
             base.OnMouseUp(e);
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             Graphics g = e.Graphics;
+
             Brush backBrush = new SolidBrush(this.BackColor);
             Brush textBrush = new SolidBrush(this.ForeColor);
             g.FillRectangle(backBrush, new RectangleF(0, 0, this.Width, this.Height));
@@ -417,7 +414,7 @@ namespace Concision.Control
                 this.Text,
                 this.Font,
                 textBrush,
-                new RectangleF(0, 0, this.Width, this.Height),
+                new RectangleF(10, 0, this.Width, this.Height),
                 this.TextAlignFormat);
             backBrush.Dispose();
             textBrush.Dispose();

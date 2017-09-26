@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Concision;
 namespace Concision.Control
 {
+    
     public class BaseControl : System.Windows.Forms.Control
     {
         /// <summary>

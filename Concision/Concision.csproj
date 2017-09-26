@@ -58,6 +58,9 @@
     <Compile Include="Control\Combobox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Control\DataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Control\Line.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,13 +80,15 @@
     <Compile Include="Editor\SymbolSelectorControl.Designer.cs">
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extension\StringExtension.cs" />
     <Compile Include="LightForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LightForm.Designer.cs">
       <DependentUpon>LightForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Math.cs" />
+    <Compile Include="Extension\MathExtension.cs" />
+    <Compile Include="Theme\ThemeStyle.cs" />
     <Compile Include="Win32\Win32Utility.cs" />
     <Compile Include="WindowAnimation.cs" />
     <Compile Include="AwesomeFont.cs" />

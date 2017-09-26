@@ -15,5 +15,17 @@ namespace TestUnit
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            for (Int32 i = 0; i < 1000; ++i)
+            {
+                String guid = Guid.NewGuid().ToString("N");
+                this.dataGridView2.Rows.Add(true, guid, guid, guid, guid);
+   
+            }
+        }
+
+ 
     }
 }

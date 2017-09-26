@@ -32,6 +32,7 @@
             this.windowsButton3 = new Concision.Control.WindowsButton();
             this.windowsButton2 = new Concision.Control.WindowsButton();
             this.windowsButton1 = new Concision.Control.WindowsButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // line1
@@ -55,14 +56,16 @@
             // 
             // windowsButton3
             // 
+            this.windowsButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.windowsButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.windowsButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsButton3.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.windowsButton3.EnabledMousePierce = false;
             this.windowsButton3.Font = new System.Drawing.Font("FontAwesome", 11F);
             this.windowsButton3.ForeColor = System.Drawing.Color.White;
             this.windowsButton3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.windowsButton3.IconSize = 11F;
-            this.windowsButton3.Location = new System.Drawing.Point(665, 11);
+            this.windowsButton3.Location = new System.Drawing.Point(661, 11);
             this.windowsButton3.Margin = new System.Windows.Forms.Padding(0);
             this.windowsButton3.Name = "windowsButton3";
             this.windowsButton3.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
@@ -76,7 +79,9 @@
             // 
             // windowsButton2
             // 
+            this.windowsButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.windowsButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.windowsButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsButton2.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.windowsButton2.EnabledMousePierce = false;
             this.windowsButton2.Font = new System.Drawing.Font("FontAwesome", 12F);
@@ -97,14 +102,16 @@
             // 
             // windowsButton1
             // 
+            this.windowsButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.windowsButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.windowsButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.windowsButton1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.windowsButton1.EnabledMousePierce = false;
             this.windowsButton1.Font = new System.Drawing.Font("FontAwesome", 15F);
             this.windowsButton1.ForeColor = System.Drawing.Color.White;
             this.windowsButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.windowsButton1.IconSize = 15F;
-            this.windowsButton1.Location = new System.Drawing.Point(745, 11);
+            this.windowsButton1.Location = new System.Drawing.Point(747, 11);
             this.windowsButton1.Margin = new System.Windows.Forms.Padding(0);
             this.windowsButton1.Name = "windowsButton1";
             this.windowsButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
@@ -116,16 +123,20 @@
             this.windowsButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.windowsButton1.WindowsButtonType = Concision.Control.WindowsButtonType.Close;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(390, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 52);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
             // DarkForm
             // 
-            this.Animation.AnimationTime = 200;
-            this.Animation.Enabled = true;
-            this.Animation.HideEffect = Concision.WindowAnimationStyle.Fade;
-            this.Animation.ShowEffect = Concision.WindowAnimationStyle.Center;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.windowsButton3);
             this.Controls.Add(this.windowsButton2);
             this.Controls.Add(this.windowsButton1);
@@ -142,5 +153,6 @@
         protected Control.WindowsButton windowsButton2;
         protected Control.WindowsButton windowsButton1;
         protected Control.Line line1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

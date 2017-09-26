@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace TestUnit
 {
-    public partial class Form1 : DarkForm
+    public partial class Form1 : LightForm
     {
         public Form1()
         {
@@ -23,22 +23,32 @@ namespace TestUnit
             Boolean asc = true;
             Int32 max = 50;
             Int32 min = 10;
-            this.symbol1.DoAnimation(
-                () =>
-                {
-                    Int32 num = 2;
-                    if (this.symbol1.SymbolSize == min) asc = true; 
-                    if (this.symbol1.SymbolSize == max) asc =false;
+            //this.symbol1.DoAnimation(
+            //    () =>
+            //    {
+            //        Int32 num = 2;
+            //        if (this.symbol1.SymbolSize == min) asc = true; 
+            //        if (this.symbol1.SymbolSize == max) asc =false;
 
-                    this.symbol1.SymbolSize += (asc?num:-num);
-                    this.scutcheon3.Text = this.symbol1.SymbolSize.ToString();
+            //        this.symbol1.SymbolSize += (asc?num:-num);
+            //        this.scutcheon3.Text = this.symbol1.SymbolSize.ToString();
              
-                    return true;
-                },5
-                );
+            //        return true;
+            //    },5
+            //    );
             //this.combobox1.AddRange
-            this.combobox1.Add("国土局");
-            this.combobox1.Add("财政厅");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
+            this.combobox1.Add("国土局打算");
+            this.combobox1.Add("财政厅的撒旦");
         }
 
         private void button1_Click(object sender, EventArgs e)

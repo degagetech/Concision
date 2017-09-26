@@ -20,13 +20,13 @@ namespace TestUnit
             Application.EnableVisualStyles();
             AppDomain.CurrentDomain.FirstChanceException += CurrentDomain_FirstChanceException;
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LightForm());
-            //Application.Run(new Form2());
+            //Application.Run(new LightForm());
+            Application.Run(new Form2());
         }
 
         private static void CurrentDomain_FirstChanceException(object sender, System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs e)
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
     }
 }
