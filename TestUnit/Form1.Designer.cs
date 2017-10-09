@@ -164,7 +164,7 @@
             this.combobox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.combobox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.combobox1.IsWaiting = false;
-            this.combobox1.ItemFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.combobox1.ItemFont = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.combobox1.ItemHeight = 30;
             this.combobox1.Location = new System.Drawing.Point(529, 127);
             this.combobox1.Margin = new System.Windows.Forms.Padding(0);
@@ -172,7 +172,7 @@
             this.combobox1.NormalColor = System.Drawing.Color.WhiteSmoke;
             this.combobox1.SelectedIndex = -1;
             this.combobox1.SelectedText = null;
-            this.combobox1.Size = new System.Drawing.Size(217, 34);
+            this.combobox1.Size = new System.Drawing.Size(217, 42);
             this.combobox1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.combobox1.SymbolSize = 10F;
             this.combobox1.TabIndex = 14;

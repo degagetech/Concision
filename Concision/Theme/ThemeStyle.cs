@@ -17,11 +17,11 @@ namespace Concision
         /// <summary>
         /// 前景色（字体颜色）
         /// </summary>
-        public Color Forecolor { get; set; }
+        public Color Forecolor { get; set; } = Color.Black;
         /// <summary>
         /// 背景色
         /// </summary>
-        public Color BackColor { get; set; }
+        public Color BackColor { get; set; } = Color.FromArgb(240,240,240);
         /// <summary>
         /// 阴影颜色
         /// </summary>

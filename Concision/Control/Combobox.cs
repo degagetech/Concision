@@ -365,14 +365,15 @@ namespace Concision.Control
         public Color NormalColor { get; set; } = Color.WhiteSmoke;
         public Color PressColor { get; set; } = Color.FromArgb(175, 175, 175);
 
-        public Color HoverForeColor { get; set; } = Color.FromArgb(240, 240, 240);
+        public Color HoverForeColor { get; set; } = Color.White;
         public Color NormalForeColor { get; set; } = Color.FromArgb(30, 30, 30);
-        public Color PressForeColor { get; set; } = Color.FromArgb(250, 250, 250);
+        public Color PressForeColor { get; set; } = Color.White;
 
 
 
         public ComboboxToolStripItem()
         {
+            this.Margin = new Padding(1,0,1,0);
             this.BackColor = this.NormalColor;
             this.ForeColor = this.NormalForeColor;
         }
