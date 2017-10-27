@@ -94,6 +94,7 @@ namespace Concision
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);
+           
         }
 
 

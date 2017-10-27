@@ -28,6 +28,7 @@ namespace Concision.Control
         }
         protected override void OnCellPainting(DataGridViewCellPaintingEventArgs e)
         {
+            base.OnCellPainting(e);
             if (-1 == e.RowIndex)
             {
                 this.OnColumnHeaderCellPainting(e);
@@ -36,13 +37,15 @@ namespace Concision.Control
             {
                 this.OnRowHeaderCellPainting(e);
             }
-            base.OnCellPainting(e);
         }
         /// <summary>
         /// 列标题单元格绘制
         /// </summary>
         protected virtual void OnColumnHeaderCellPainting(DataGridViewCellPaintingEventArgs e)
         {
+            Graphics g = e.Graphics;
+           
+  
             if (!this.EnableHeadersVisualStyles)
             {
                 this.ColumnHeaderCellPainting?.Invoke(this, e);

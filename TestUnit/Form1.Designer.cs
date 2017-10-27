@@ -30,36 +30,41 @@
         {
             this.scutcheon1 = new Concision.Control.Scutcheon();
             this.scutcheon2 = new Concision.Control.Scutcheon();
-            this.scutcheon3 = new Concision.Control.Scutcheon();
             this.button1 = new Concision.Control.Button();
             this.shade1 = new Concision.Control.Shade();
             this.symbol1 = new Concision.Control.Symbol();
             this.combobox1 = new Concision.Control.Combobox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.symbol2 = new Concision.Control.Symbol();
+            this.symbol3 = new Concision.Control.Symbol();
+            this.line2 = new Concision.Control.Line();
+            this.scutcheon3 = new Concision.Control.Scutcheon();
             this.SuspendLayout();
             // 
             // windowsButton3
             // 
             this.windowsButton3.BackColor = System.Drawing.SystemColors.Control;
+            this.windowsButton3.Location = new System.Drawing.Point(749, 11);
             // 
             // windowsButton2
             // 
             this.windowsButton2.BackColor = System.Drawing.SystemColors.Control;
+            this.windowsButton2.Location = new System.Drawing.Point(789, 11);
             // 
             // windowsButton1
             // 
             this.windowsButton1.BackColor = System.Drawing.SystemColors.Control;
+            this.windowsButton1.Location = new System.Drawing.Point(829, 11);
             // 
             // line1
             // 
-            this.line1.LineLength = 856;
-            this.line1.Size = new System.Drawing.Size(856, 2);
+            this.line1.LineLength = 939;
+            this.line1.Size = new System.Drawing.Size(939, 2);
             // 
             // scutcheon1
             // 
             this.scutcheon1.EnabledMousePierce = false;
             this.scutcheon1.ForeColor = System.Drawing.Color.White;
-            this.scutcheon1.Location = new System.Drawing.Point(34, 189);
+            this.scutcheon1.Location = new System.Drawing.Point(352, 173);
             this.scutcheon1.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon1.Name = "scutcheon1";
             this.scutcheon1.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
@@ -68,40 +73,24 @@
             this.scutcheon1.ShadowWidth = 1;
             this.scutcheon1.Size = new System.Drawing.Size(147, 48);
             this.scutcheon1.TabIndex = 5;
-            this.scutcheon1.Text = "在不在？";
+            this.scutcheon1.Text = "标牌控件-椭圆";
             this.scutcheon1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // scutcheon2
             // 
             this.scutcheon2.EnabledMousePierce = true;
             this.scutcheon2.ForeColor = System.Drawing.Color.White;
-            this.scutcheon2.Location = new System.Drawing.Point(156, 263);
+            this.scutcheon2.Location = new System.Drawing.Point(205, 221);
             this.scutcheon2.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon2.Name = "scutcheon2";
             this.scutcheon2.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.scutcheon2.ScutcheonShape = Concision.Control.ScutcheonShapeType.Square;
+            this.scutcheon2.ScutcheonShape = Concision.Control.ScutcheonShapeType.Triangle;
             this.scutcheon2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.scutcheon2.ShadowWidth = 1;
-            this.scutcheon2.Size = new System.Drawing.Size(147, 48);
+            this.scutcheon2.Size = new System.Drawing.Size(147, 123);
             this.scutcheon2.TabIndex = 6;
-            this.scutcheon2.Text = "没事就在有事就不在";
+            this.scutcheon2.Text = "标牌控件-三角";
             this.scutcheon2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // scutcheon3
-            // 
-            this.scutcheon3.EnabledMousePierce = false;
-            this.scutcheon3.ForeColor = System.Drawing.Color.White;
-            this.scutcheon3.Location = new System.Drawing.Point(127, 382);
-            this.scutcheon3.Margin = new System.Windows.Forms.Padding(0);
-            this.scutcheon3.Name = "scutcheon3";
-            this.scutcheon3.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.scutcheon3.ScutcheonShape = Concision.Control.ScutcheonShapeType.Circle;
-            this.scutcheon3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.scutcheon3.ShadowWidth = 1;
-            this.scutcheon3.Size = new System.Drawing.Size(147, 48);
-            this.scutcheon3.TabIndex = 7;
-            this.scutcheon3.Text = "没事";
-            this.scutcheon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -112,13 +101,13 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
             this.button1.IsWaiting = false;
-            this.button1.Location = new System.Drawing.Point(216, 114);
+            this.button1.Location = new System.Drawing.Point(211, 159);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.button1.Size = new System.Drawing.Size(156, 47);
+            this.button1.Size = new System.Drawing.Size(114, 44);
             this.button1.TabIndex = 8;
-            this.button1.Text = "点我，马上开始";
+            this.button1.Text = "标牌控件-方形";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -128,26 +117,26 @@
             this.shade1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.shade1.EnabledDrawText = true;
             this.shade1.EnabledMousePierce = false;
-            this.shade1.Location = new System.Drawing.Point(82, 185);
+            this.shade1.Location = new System.Drawing.Point(21, 129);
             this.shade1.Margin = new System.Windows.Forms.Padding(0);
             this.shade1.Name = "shade1";
-            this.shade1.Size = new System.Drawing.Size(419, 245);
+            this.shade1.Size = new System.Drawing.Size(468, 245);
             this.shade1.TabIndex = 10;
-            this.shade1.Text = "遮罩";
+            this.shade1.Text = "遮罩控件";
             this.shade1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // symbol1
             // 
             this.symbol1.EnabledMousePierce = false;
-            this.symbol1.Font = new System.Drawing.Font("FontAwesome", 10F);
-            this.symbol1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.symbol1.Location = new System.Drawing.Point(284, 350);
+            this.symbol1.Font = new System.Drawing.Font("FontAwesome", 15F);
+            this.symbol1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.symbol1.Location = new System.Drawing.Point(562, 306);
             this.symbol1.Margin = new System.Windows.Forms.Padding(0);
             this.symbol1.Name = "symbol1";
-            this.symbol1.Size = new System.Drawing.Size(161, 118);
-            this.symbol1.SymbolColor = System.Drawing.SystemColors.ControlText;
-            this.symbol1.SymbolPattern = "";
-            this.symbol1.SymbolSize = 10F;
+            this.symbol1.Size = new System.Drawing.Size(59, 45);
+            this.symbol1.SymbolColor = System.Drawing.Color.DodgerBlue;
+            this.symbol1.SymbolPattern = "";
+            this.symbol1.SymbolSize = 15F;
             this.symbol1.TabIndex = 13;
             this.symbol1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -166,7 +155,7 @@
             this.combobox1.IsWaiting = false;
             this.combobox1.ItemFont = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.combobox1.ItemHeight = 30;
-            this.combobox1.Location = new System.Drawing.Point(529, 127);
+            this.combobox1.Location = new System.Drawing.Point(513, 93);
             this.combobox1.Margin = new System.Windows.Forms.Padding(0);
             this.combobox1.Name = "combobox1";
             this.combobox1.NormalColor = System.Drawing.Color.WhiteSmoke;
@@ -176,37 +165,84 @@
             this.combobox1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.combobox1.SymbolSize = 10F;
             this.combobox1.TabIndex = 14;
-            this.combobox1.Text = "combobox1";
+            this.combobox1.Text = "Combobox";
             this.combobox1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox2
+            // symbol2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "的恺撒奖",
-            "肯定就是卡的",
-            "你的进口三菱的",
-            "电脑双开练级啊的"});
-            this.comboBox2.Location = new System.Drawing.Point(551, 263);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(154, 25);
-            this.comboBox2.TabIndex = 15;
+            this.symbol2.EnabledMousePierce = false;
+            this.symbol2.Font = new System.Drawing.Font("FontAwesome", 15F);
+            this.symbol2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.symbol2.Location = new System.Drawing.Point(631, 306);
+            this.symbol2.Margin = new System.Windows.Forms.Padding(0);
+            this.symbol2.Name = "symbol2";
+            this.symbol2.Size = new System.Drawing.Size(59, 45);
+            this.symbol2.SymbolColor = System.Drawing.Color.DodgerBlue;
+            this.symbol2.SymbolPattern = "";
+            this.symbol2.SymbolSize = 15F;
+            this.symbol2.TabIndex = 15;
+            this.symbol2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // symbol3
+            // 
+            this.symbol3.EnabledMousePierce = false;
+            this.symbol3.Font = new System.Drawing.Font("FontAwesome", 15F);
+            this.symbol3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.symbol3.Location = new System.Drawing.Point(562, 361);
+            this.symbol3.Margin = new System.Windows.Forms.Padding(0);
+            this.symbol3.Name = "symbol3";
+            this.symbol3.Size = new System.Drawing.Size(59, 45);
+            this.symbol3.SymbolColor = System.Drawing.Color.DodgerBlue;
+            this.symbol3.SymbolPattern = "";
+            this.symbol3.SymbolSize = 15F;
+            this.symbol3.TabIndex = 16;
+            this.symbol3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // line2
+            // 
+            this.line2.CustomBursh = null;
+            this.line2.EnabledMousePierce = false;
+            this.line2.IsVertical = false;
+            this.line2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.line2.LineLength = 372;
+            this.line2.LineWidth = 5;
+            this.line2.Location = new System.Drawing.Point(162, 454);
+            this.line2.Margin = new System.Windows.Forms.Padding(0);
+            this.line2.Name = "line2";
+            this.line2.Size = new System.Drawing.Size(372, 5);
+            this.line2.TabIndex = 17;
+            this.line2.Text = "line2";
+            this.line2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // scutcheon3
+            // 
+            this.scutcheon3.EnabledMousePierce = false;
+            this.scutcheon3.ForeColor = System.Drawing.Color.White;
+            this.scutcheon3.Location = new System.Drawing.Point(30, 434);
+            this.scutcheon3.Margin = new System.Windows.Forms.Padding(0);
+            this.scutcheon3.Name = "scutcheon3";
+            this.scutcheon3.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
+            this.scutcheon3.ScutcheonShape = Concision.Control.ScutcheonShapeType.Circle;
+            this.scutcheon3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.scutcheon3.ShadowWidth = 1;
+            this.scutcheon3.Size = new System.Drawing.Size(120, 48);
+            this.scutcheon3.TabIndex = 18;
+            this.scutcheon3.Text = "Line控件";
+            this.scutcheon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
-            this.Animation.AnimationTime = 200;
-            this.Animation.Enabled = true;
-            this.Animation.HideEffect = Concision.WindowAnimationStyle.Fade;
-            this.Animation.ShowEffect = Concision.WindowAnimationStyle.Center;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
-            this.Controls.Add(this.comboBox2);
+            this.ClientSize = new System.Drawing.Size(883, 548);
+            this.Controls.Add(this.scutcheon3);
+            this.Controls.Add(this.line2);
+            this.Controls.Add(this.symbol3);
+            this.Controls.Add(this.symbol2);
             this.Controls.Add(this.combobox1);
             this.Controls.Add(this.shade1);
             this.Controls.Add(this.symbol1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.scutcheon3);
             this.Controls.Add(this.scutcheon2);
             this.Controls.Add(this.scutcheon1);
             this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
@@ -218,13 +254,15 @@
             this.Controls.SetChildIndex(this.windowsButton3, 0);
             this.Controls.SetChildIndex(this.scutcheon1, 0);
             this.Controls.SetChildIndex(this.scutcheon2, 0);
-            this.Controls.SetChildIndex(this.scutcheon3, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.symbol1, 0);
             this.Controls.SetChildIndex(this.line1, 0);
             this.Controls.SetChildIndex(this.shade1, 0);
             this.Controls.SetChildIndex(this.combobox1, 0);
-            this.Controls.SetChildIndex(this.comboBox2, 0);
+            this.Controls.SetChildIndex(this.symbol2, 0);
+            this.Controls.SetChildIndex(this.symbol3, 0);
+            this.Controls.SetChildIndex(this.line2, 0);
+            this.Controls.SetChildIndex(this.scutcheon3, 0);
             this.ResumeLayout(false);
 
         }
@@ -232,12 +270,14 @@
         #endregion
         private Concision.Control.Scutcheon scutcheon1;
         private Concision.Control.Scutcheon scutcheon2;
-        private Concision.Control.Scutcheon scutcheon3;
         private Concision.Control.Button button1;
         private Concision.Control.Shade shade1;
         private Concision.Control.Symbol symbol1;
         private Concision.Control.Combobox combobox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private Concision.Control.Symbol symbol2;
+        private Concision.Control.Symbol symbol3;
+        private Concision.Control.Line line2;
+        private Concision.Control.Scutcheon scutcheon3;
     }
 }
 

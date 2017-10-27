@@ -126,7 +126,7 @@ namespace Concision
             nameof(WindowAnimation.HideEffect)};
             return TypeDescriptor.GetProperties(typeof(WindowAnimation), attributes).Sort(names);
         }
-
+     
         public override Boolean GetPropertiesSupported(ITypeDescriptorContext context)
         {
             return true;

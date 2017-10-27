@@ -11,14 +11,7 @@ using System.Text;
 
 namespace Concision
 {
-    //TODO:awesome字体代码选择器的实现
-    /// <summary> 
-    /// awesome字体代码选择器
-    /// </summary>
-    public class AwesomeFontCodeSelector : UITypeEditor
-    {
-        
-    }
+
     public class AwesomeFont
     {
         private static FontFamily _AwesomeFontFamily;
@@ -33,11 +26,12 @@ namespace Concision
                 {
                     if (_AwesomeFontFamily == null)
                     {
+                        /******将字体资源加载到内存中*******/
                         System.Drawing.Text.PrivateFontCollection fontCollection = new System.Drawing.Text.PrivateFontCollection();
                         byte[] fontdata = Properties.Resources.FontAwesome;
-                        IntPtr MeAdd = Marshal.AllocHGlobal(fontdata.Length);
-                        Marshal.Copy(fontdata, 0, MeAdd, fontdata.Length);
-                        fontCollection.AddMemoryFont(MeAdd, fontdata.Length);
+                        IntPtr pFontMemory = Marshal.AllocHGlobal(fontdata.Length);
+                        Marshal.Copy(fontdata, 0, pFontMemory, fontdata.Length);
+                        fontCollection.AddMemoryFont(pFontMemory, fontdata.Length);
                         _AwesomeFontFamily = fontCollection.Families[0];
                     }
                 }

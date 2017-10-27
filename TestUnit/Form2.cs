@@ -14,6 +14,7 @@ namespace TestUnit
         public Form2()
         {
             InitializeComponent();
+            this.label1.Text = System.Globalization.CultureInfo.InstalledUICulture.Name;
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimationExecutor.cs" />
+    <Compile Include="ConfigurableDescriptionAttribute.cs" />
     <Compile Include="Control\AnimationButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -73,11 +74,11 @@
     <Compile Include="DarkForm.Designer.cs">
       <DependentUpon>DarkForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Editor\SymbolEditor.cs" />
-    <Compile Include="Editor\SymbolSelectorControl.cs">
+    <Compile Include="Editor\Symbol\SymbolEditor.cs" />
+    <Compile Include="Editor\Symbol\SymbolSelectorControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Editor\SymbolSelectorControl.Designer.cs">
+    <Compile Include="Editor\Symbol\SymbolSelectorControl.Designer.cs">
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Extension\StringExtension.cs" />
@@ -88,10 +89,18 @@
       <DependentUpon>LightForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Extension\MathExtension.cs" />
-    <Compile Include="Theme\ThemeStyle.cs" />
+    <Compile Include="Localization\CultureInfoHelper.cs" />
+    <Compile Include="Localization\Localization.cs" />
+    <Compile Include="Localization\LocalizationTextReousrceCollection.cs" />
+    <Compile Include="RenderingStyle.cs" />
+    <Compile Include="Resources\LocalizationTextReousrceCollection.cs" />
+    <Compile Include="TextResourceReader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolKit.cs" />
     <Compile Include="Win32\Win32Utility.cs" />
     <Compile Include="WindowAnimation.cs" />
-    <Compile Include="AwesomeFont.cs" />
+    <Compile Include="Font\AwesomeFont.cs" />
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,7 +152,7 @@
     <EmbeddedResource Include="DarkForm.resx">
       <DependentUpon>DarkForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Editor\SymbolSelectorControl.resx">
+    <EmbeddedResource Include="Editor\Symbol\SymbolSelectorControl.resx">
       <DependentUpon>SymbolSelectorControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LightForm.resx">
@@ -164,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="待实现.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Theme\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
