@@ -38,6 +38,12 @@
             this.symbol3 = new Concision.Control.Symbol();
             this.line2 = new Concision.Control.Line();
             this.scutcheon3 = new Concision.Control.Scutcheon();
+            this.waitIndicator1 = new Concision.Control.WaitIndicator();
+            this.waitIndicator2 = new Concision.Control.WaitIndicator();
+            this.waitIndicator3 = new Concision.Control.WaitIndicator();
+            this.waitIndicator4 = new Concision.Control.WaitIndicator();
+            this.button2 = new Concision.Control.Button();
+            this.button3 = new Concision.Control.Button();
             this.SuspendLayout();
             // 
             // windowsButton3
@@ -230,11 +236,142 @@
             this.scutcheon3.Text = "Line控件";
             this.scutcheon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // waitIndicator1
+            // 
+            this.waitIndicator1.CurrentAngle = 15F;
+            this.waitIndicator1.EachRollingAngle = 15F;
+            this.waitIndicator1.EnabledMousePierce = false;
+            this.waitIndicator1.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.DarkHorizontal;
+            this.waitIndicator1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.waitIndicator1.IsFollowParentBackColor = true;
+            this.waitIndicator1.IsRolled = true;
+            this.waitIndicator1.Location = new System.Drawing.Point(655, 468);
+            this.waitIndicator1.Margin = new System.Windows.Forms.Padding(0);
+            this.waitIndicator1.Name = "waitIndicator1";
+            this.waitIndicator1.RollingSpeed = 60D;
+            this.waitIndicator1.RollPartBrushType = Concision.Control.RollPartBrushType.Solid;
+            this.waitIndicator1.RollPartLengthPercent = 60F;
+            this.waitIndicator1.RollPartWidthPercent = 20F;
+            this.waitIndicator1.Size = new System.Drawing.Size(50, 50);
+            this.waitIndicator1.TabIndex = 19;
+            this.waitIndicator1.Text = "waitIndicator1";
+            this.waitIndicator1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.waitIndicator1.WaitIndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            // 
+            // waitIndicator2
+            // 
+            this.waitIndicator2.CurrentAngle = 240F;
+            this.waitIndicator2.EachRollingAngle = 15F;
+            this.waitIndicator2.EnabledMousePierce = false;
+            this.waitIndicator2.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.WideUpwardDiagonal;
+            this.waitIndicator2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.waitIndicator2.IsFollowParentBackColor = true;
+            this.waitIndicator2.IsRolled = true;
+            this.waitIndicator2.Location = new System.Drawing.Point(749, 468);
+            this.waitIndicator2.Margin = new System.Windows.Forms.Padding(0);
+            this.waitIndicator2.Name = "waitIndicator2";
+            this.waitIndicator2.RollingSpeed = 60D;
+            this.waitIndicator2.RollPartBrushType = Concision.Control.RollPartBrushType.Hatch;
+            this.waitIndicator2.RollPartLengthPercent = 60F;
+            this.waitIndicator2.RollPartWidthPercent = 20F;
+            this.waitIndicator2.Size = new System.Drawing.Size(30, 30);
+            this.waitIndicator2.TabIndex = 20;
+            this.waitIndicator2.Text = "waitIndicator2";
+            this.waitIndicator2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.waitIndicator2.WaitIndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            // 
+            // waitIndicator3
+            // 
+            this.waitIndicator3.CurrentAngle = 45F;
+            this.waitIndicator3.EachRollingAngle = 15F;
+            this.waitIndicator3.EnabledMousePierce = false;
+            this.waitIndicator3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.waitIndicator3.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.SmallGrid;
+            this.waitIndicator3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.waitIndicator3.IsFollowParentBackColor = true;
+            this.waitIndicator3.IsRolled = true;
+            this.waitIndicator3.Location = new System.Drawing.Point(799, 468);
+            this.waitIndicator3.Margin = new System.Windows.Forms.Padding(0);
+            this.waitIndicator3.Name = "waitIndicator3";
+            this.waitIndicator3.RollingSpeed = 60D;
+            this.waitIndicator3.RollPartBrushType = Concision.Control.RollPartBrushType.Hatch;
+            this.waitIndicator3.RollPartLengthPercent = 60F;
+            this.waitIndicator3.RollPartWidthPercent = 20F;
+            this.waitIndicator3.Size = new System.Drawing.Size(30, 30);
+            this.waitIndicator3.TabIndex = 21;
+            this.waitIndicator3.Text = "waitIndicator3";
+            this.waitIndicator3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.waitIndicator3.WaitIndicatorColor = System.Drawing.SystemColors.ButtonFace;
+            // 
+            // waitIndicator4
+            // 
+            this.waitIndicator4.CurrentAngle = 255F;
+            this.waitIndicator4.EachRollingAngle = 15F;
+            this.waitIndicator4.EnabledMousePierce = false;
+            this.waitIndicator4.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.DarkHorizontal;
+            this.waitIndicator4.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.waitIndicator4.IsFollowParentBackColor = true;
+            this.waitIndicator4.IsRolled = true;
+            this.waitIndicator4.Location = new System.Drawing.Point(582, 468);
+            this.waitIndicator4.Margin = new System.Windows.Forms.Padding(0);
+            this.waitIndicator4.Name = "waitIndicator4";
+            this.waitIndicator4.RollingSpeed = 60D;
+            this.waitIndicator4.RollPartBrushType = Concision.Control.RollPartBrushType.Solid;
+            this.waitIndicator4.RollPartLengthPercent = 60F;
+            this.waitIndicator4.RollPartWidthPercent = 20F;
+            this.waitIndicator4.Size = new System.Drawing.Size(50, 50);
+            this.waitIndicator4.TabIndex = 22;
+            this.waitIndicator4.Text = "waitIndicator4";
+            this.waitIndicator4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.waitIndicator4.WaitIndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.button2.EnabledMousePierce = false;
+            this.button2.EnabledWaitingClick = false;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.button2.IsWaiting = true;
+            this.button2.Location = new System.Drawing.Point(721, 303);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
+            this.button2.Size = new System.Drawing.Size(133, 41);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "按钮-等待";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.button3.EnabledMousePierce = false;
+            this.button3.EnabledWaitingClick = false;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(200)))), ((int)(((byte)(250)))));
+            this.button3.IsWaiting = false;
+            this.button3.Location = new System.Drawing.Point(721, 246);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
+            this.button3.Size = new System.Drawing.Size(133, 41);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "按钮";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 548);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.waitIndicator4);
+            this.Controls.Add(this.waitIndicator3);
+            this.Controls.Add(this.waitIndicator2);
+            this.Controls.Add(this.waitIndicator1);
             this.Controls.Add(this.scutcheon3);
             this.Controls.Add(this.line2);
             this.Controls.Add(this.symbol3);
@@ -263,6 +400,12 @@
             this.Controls.SetChildIndex(this.symbol3, 0);
             this.Controls.SetChildIndex(this.line2, 0);
             this.Controls.SetChildIndex(this.scutcheon3, 0);
+            this.Controls.SetChildIndex(this.waitIndicator1, 0);
+            this.Controls.SetChildIndex(this.waitIndicator2, 0);
+            this.Controls.SetChildIndex(this.waitIndicator3, 0);
+            this.Controls.SetChildIndex(this.waitIndicator4, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
             this.ResumeLayout(false);
 
         }
@@ -278,6 +421,12 @@
         private Concision.Control.Symbol symbol3;
         private Concision.Control.Line line2;
         private Concision.Control.Scutcheon scutcheon3;
+        private Concision.Control.WaitIndicator waitIndicator1;
+        private Concision.Control.WaitIndicator waitIndicator2;
+        private Concision.Control.WaitIndicator waitIndicator3;
+        private Concision.Control.WaitIndicator waitIndicator4;
+        private Concision.Control.Button button2;
+        private Concision.Control.Button button3;
     }
 }
 
