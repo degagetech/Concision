@@ -1,16 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concision", "Concision\Concision.csproj", "{D969A5CE-A502-4FB5-A03D-2C5D6A5F0F55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnit", "TestUnit\TestUnit.csproj", "{A5121002-64C1-4950-B5F7-80FF5A8FEB75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concision.Vedio", "Concision.Vedio\Concision.Vedio.csproj", "{7EA79311-DFE3-4ED7-9373-F270D5B9DA88}"
+EndProject
 Global
-	GlobalSection(Performance) = preSolution
-		HasPerformanceSessions = true
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -24,8 +23,18 @@ Global
 		{A5121002-64C1-4950-B5F7-80FF5A8FEB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5121002-64C1-4950-B5F7-80FF5A8FEB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5121002-64C1-4950-B5F7-80FF5A8FEB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EA79311-DFE3-4ED7-9373-F270D5B9DA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA79311-DFE3-4ED7-9373-F270D5B9DA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA79311-DFE3-4ED7-9373-F270D5B9DA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA79311-DFE3-4ED7-9373-F270D5B9DA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4B5CA84-2D0B-4888-A475-C5768B17A785}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

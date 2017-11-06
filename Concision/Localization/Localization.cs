@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Concision
 {
-    public class Localization
+    public sealed class Localization
     {
         internal const String TextResourceFileExt = ".ctrf";
         /// <summary>

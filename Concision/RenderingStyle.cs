@@ -21,10 +21,12 @@ namespace Concision
         /// <summary>
         /// 正常状态的前景色
         /// </summary>
+        [Description("正常状态的前景色")]
         public Color ForeColor { get; set; } = Color.Black;
         /// <summary>
         /// 鼠标悬浮时的前景色
         /// </summary>
+        [Description("鼠标悬浮时的前景色")]
         public Color HoverForeColor { get; set; }
         /// <summary>
         /// 选中状态的前景色
@@ -45,7 +47,10 @@ namespace Concision
         public Color SelectionBackColor { get; set; }
 
 
-
+        /// <summary>
+        /// 圆角半径
+        /// </summary>
+        public Single Radius { get; set; }
         /// <summary>
         /// 阴影颜色
         /// </summary>

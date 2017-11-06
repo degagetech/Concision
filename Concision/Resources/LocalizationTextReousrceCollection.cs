@@ -10,7 +10,7 @@ namespace Concision
         /// <summary>
         /// 默认的本地化文本资源集合
         /// </summary>
-        public  static  LocalizationTextReousrceCollection Default
+        public static LocalizationTextReousrceCollection Default
         {
             get;
         } = new LocalizationTextReousrceCollection
@@ -21,7 +21,9 @@ namespace Concision
             //注意！如果文本对Key重复，则会使用新的Value覆盖旧Value
             Pairs = new TextPair[]
             {
-                new TextPair("111","112")
+                new TextPair("font","字体"),
+                new TextPair("forecolor","正常状态时的前景色"),
+                new TextPair("is_waiting","是否处于等待状态")
             }
         };
     }

@@ -18,7 +18,7 @@ namespace Concision.Control
         /// <summary>
         /// 是否处于等待状态
         /// </summary>
-        [Description("是否处于等待状态")]
+        [TextDescription("is_waiting")]
         public Boolean IsWaiting
         {
             get

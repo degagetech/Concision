@@ -11,13 +11,18 @@ using System.Text;
 
 namespace Concision
 {
-
+    /// <summary>
+    /// Awesome字体管理
+    /// </summary>
     public class AwesomeFont
     {
         private static FontFamily _AwesomeFontFamily;
         private static Object _SyncObj = new Object();
 
-        //获取Awesome字体族
+
+        /// <summary>
+        /// 获取Awesome字体族
+        /// </summary>
         public static FontFamily FontFamily
         {
             get

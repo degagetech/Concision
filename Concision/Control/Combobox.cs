@@ -377,12 +377,17 @@ namespace Concision.Control
             this.BackColor = this.NormalColor;
             this.ForeColor = this.NormalForeColor;
         }
-        protected override void OnMouseHover(EventArgs e)
+        protected override void OnMouseEnter(EventArgs e)
         {
             this.BackColor = this.HoverColor;
             this.ForeColor = this.HoverForeColor;
-            base.OnMouseHover(e);
+            base.OnMouseEnter(e);
         }
+        //protected override void OnMouseHover(EventArgs e)
+        //{
+       
+        //    base.OnMouseHover(e);
+        //}
         protected override void OnMouseLeave(EventArgs e)
         {
             this.BackColor = this.NormalColor;

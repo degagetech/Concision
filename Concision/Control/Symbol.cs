@@ -65,11 +65,7 @@ namespace Concision.Control
         [EditorBrowsable(EditorBrowsableState.Never)]
         public override Font Font
         {
-            get
-            {
-                return base.Font;
-            }
-
+            get => base.Font;
             set
             {
                 base.Font = value;
@@ -81,11 +77,7 @@ namespace Concision.Control
         [EditorBrowsable(EditorBrowsableState.Never)]
         public override String Text
         {
-            get
-            {
-                return base.Text;
-            }
-
+            get => base.Text;
             set
             {
                 base.Text = value;
@@ -95,11 +87,7 @@ namespace Concision.Control
         [Browsable(false)]
         public override Color ForeColor
         {
-            get
-            {
-                return base.ForeColor;
-            }
-
+            get => base.ForeColor;
             set
             {
                 base.ForeColor = value;

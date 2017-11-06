@@ -27,7 +27,7 @@ namespace Concision
         public LocalizationTextReousrceCollection TextReousrceCollection { get; private set; }
         public TextResourceReader()
         {
-           
+            this.InitlizeReader(LocalizationTextReousrceCollection.Default);
         }
         public TextResourceReader(LocalizationTextReousrceCollection textReousrceCollection)
         {
@@ -45,6 +45,21 @@ namespace Concision
                 this.Add(pair.Key, pair.Value);
             }
             this.TextReousrceCollection = textReousrceCollection;
+        }
+        /// <summary>
+        ///索引器-获取指定的Key对应的文本
+        /// </summary>
+        public String this[String key]
+        {
+            get
+            {
+                String text = null;
+                if (this._textResoucePairDic.ContainsKey(key))
+                {
+                    text = this._textResoucePairDic[key];
+                }
+                return text;
+            }
         }
         /// <summary>
         /// 添加一对文本资源，若存在相同Key的资源则更新，

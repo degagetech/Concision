@@ -21,7 +21,7 @@ namespace TestUnit
             AppDomain.CurrentDomain.FirstChanceException += CurrentDomain_FirstChanceException;
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LightForm());
-            Application.Run(new Form1());
+            Application.Run(new GraphicsTestForm());
         }
 
         private static void CurrentDomain_FirstChanceException(object sender, System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs e)

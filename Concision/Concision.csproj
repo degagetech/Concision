@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimationExecutor.cs" />
-    <Compile Include="ConfigurableDescriptionAttribute.cs" />
+    <Compile Include="TextDescriptionAttribute.cs" />
     <Compile Include="Control\AnimationButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -92,6 +92,7 @@
     <Compile Include="Localization\CultureInfoHelper.cs" />
     <Compile Include="Localization\Localization.cs" />
     <Compile Include="Localization\LocalizationTextReousrceCollection.cs" />
+    <Compile Include="RenderingAssistor.cs" />
     <Compile Include="RenderingStyle.cs" />
     <Compile Include="Resources\LocalizationTextReousrceCollection.cs" />
     <Compile Include="TextResourceReader.cs">
