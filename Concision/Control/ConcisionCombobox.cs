@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Concision.Control
+namespace Concision.Controls
 {
-    public class Combobox : Button
+    public class ConcisionCombobox : ConcisionButton
     {
         /// <summary>
         /// 当选择的下拉项发生改变后
@@ -213,7 +213,7 @@ namespace Concision.Control
         private Single _symbolSize = 10F;
         private Boolean _autoDropDownHeight = true;
         /********************************/
-        public Combobox() : base()
+        public ConcisionCombobox() : base()
         {
             this._toolStripDropDown.AutoSize = false;
             this._toolStripDropDown.ItemAdded += this.ToolStripDropDown_ItemAdded;

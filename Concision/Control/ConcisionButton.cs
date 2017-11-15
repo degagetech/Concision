@@ -6,9 +6,9 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-namespace Concision.Control
+namespace Concision.Controls
 {
-    public class Button : BaseControl
+    public class ConcisionButton : BaseControl
     {
         /// <summary>
         /// 按钮处于等待状态时是否触发点击事件
@@ -97,7 +97,7 @@ namespace Concision.Control
         private Color _shadowColor = Color.FromArgb(150, 175, 175, 175);
         private Single _shadowWidth = 1;
         private WaitIndicator _waitIndicator = new WaitIndicator();
-        public Button() : base()
+        public ConcisionButton() : base()
         {
             this.Cursor = Cursors.Hand;
             this.ForeColor = Color.White;

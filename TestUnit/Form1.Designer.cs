@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.scutcheon1 = new Concision.Control.Scutcheon();
-            this.scutcheon2 = new Concision.Control.Scutcheon();
-            this.button1 = new Concision.Control.Button();
-            this.shade1 = new Concision.Control.Shade();
-            this.symbol1 = new Concision.Control.Symbol();
-            this.combobox1 = new Concision.Control.Combobox();
-            this.symbol2 = new Concision.Control.Symbol();
-            this.symbol3 = new Concision.Control.Symbol();
-            this.line2 = new Concision.Control.Line();
-            this.scutcheon3 = new Concision.Control.Scutcheon();
-            this.waitIndicator1 = new Concision.Control.WaitIndicator();
-            this.waitIndicator2 = new Concision.Control.WaitIndicator();
-            this.waitIndicator3 = new Concision.Control.WaitIndicator();
-            this.waitIndicator4 = new Concision.Control.WaitIndicator();
-            this.button2 = new Concision.Control.Button();
-            this.button3 = new Concision.Control.Button();
+            this.scutcheon1 = new Concision.Controls.Scutcheon();
+            this.scutcheon2 = new Concision.Controls.Scutcheon();
+            this.button1 = new Concision.Controls.ConcisionButton();
+            this.shade1 = new Concision.Controls.Shade();
+            this.symbol1 = new Concision.Controls.Symbol();
+            this.combobox1 = new Concision.Controls.ConcisionCombobox();
+            this.symbol2 = new Concision.Controls.Symbol();
+            this.symbol3 = new Concision.Controls.Symbol();
+            this.line2 = new Concision.Controls.Line();
+            this.scutcheon3 = new Concision.Controls.Scutcheon();
+            this.waitIndicator1 = new Concision.Controls.WaitIndicator();
+            this.waitIndicator2 = new Concision.Controls.WaitIndicator();
+            this.waitIndicator3 = new Concision.Controls.WaitIndicator();
+            this.waitIndicator4 = new Concision.Controls.WaitIndicator();
+            this.button2 = new Concision.Controls.ConcisionButton();
+            this.button3 = new Concision.Controls.ConcisionButton();
             this.SuspendLayout();
             // 
             // windowsButton3
@@ -74,7 +74,7 @@
             this.scutcheon1.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon1.Name = "scutcheon1";
             this.scutcheon1.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.scutcheon1.ScutcheonShape = Concision.Control.ScutcheonShapeType.Circle;
+            this.scutcheon1.ScutcheonShape = Concision.Controls.ScutcheonShapeType.Circle;
             this.scutcheon1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.scutcheon1.ShadowWidth = 1;
             this.scutcheon1.Size = new System.Drawing.Size(147, 48);
@@ -90,7 +90,7 @@
             this.scutcheon2.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon2.Name = "scutcheon2";
             this.scutcheon2.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.scutcheon2.ScutcheonShape = Concision.Control.ScutcheonShapeType.Triangle;
+            this.scutcheon2.ScutcheonShape = Concision.Controls.ScutcheonShapeType.Triangle;
             this.scutcheon2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.scutcheon2.ShadowWidth = 1;
             this.scutcheon2.Size = new System.Drawing.Size(147, 123);
@@ -228,7 +228,7 @@
             this.scutcheon3.Margin = new System.Windows.Forms.Padding(0);
             this.scutcheon3.Name = "scutcheon3";
             this.scutcheon3.ScutcheonColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(166)))), ((int)(((byte)(228)))));
-            this.scutcheon3.ScutcheonShape = Concision.Control.ScutcheonShapeType.Circle;
+            this.scutcheon3.ScutcheonShape = Concision.Controls.ScutcheonShapeType.Circle;
             this.scutcheon3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.scutcheon3.ShadowWidth = 1;
             this.scutcheon3.Size = new System.Drawing.Size(120, 48);
@@ -249,7 +249,7 @@
             this.waitIndicator1.Margin = new System.Windows.Forms.Padding(0);
             this.waitIndicator1.Name = "waitIndicator1";
             this.waitIndicator1.RollingSpeed = 60D;
-            this.waitIndicator1.RollPartBrushType = Concision.Control.RollPartBrushType.Solid;
+            this.waitIndicator1.RollPartBrushType = Concision.Controls.RollPartBrushType.Solid;
             this.waitIndicator1.RollPartLengthPercent = 60F;
             this.waitIndicator1.RollPartWidthPercent = 20F;
             this.waitIndicator1.Size = new System.Drawing.Size(50, 50);
@@ -271,7 +271,7 @@
             this.waitIndicator2.Margin = new System.Windows.Forms.Padding(0);
             this.waitIndicator2.Name = "waitIndicator2";
             this.waitIndicator2.RollingSpeed = 60D;
-            this.waitIndicator2.RollPartBrushType = Concision.Control.RollPartBrushType.Hatch;
+            this.waitIndicator2.RollPartBrushType = Concision.Controls.RollPartBrushType.Hatch;
             this.waitIndicator2.RollPartLengthPercent = 60F;
             this.waitIndicator2.RollPartWidthPercent = 20F;
             this.waitIndicator2.Size = new System.Drawing.Size(30, 30);
@@ -294,7 +294,7 @@
             this.waitIndicator3.Margin = new System.Windows.Forms.Padding(0);
             this.waitIndicator3.Name = "waitIndicator3";
             this.waitIndicator3.RollingSpeed = 60D;
-            this.waitIndicator3.RollPartBrushType = Concision.Control.RollPartBrushType.Hatch;
+            this.waitIndicator3.RollPartBrushType = Concision.Controls.RollPartBrushType.Hatch;
             this.waitIndicator3.RollPartLengthPercent = 60F;
             this.waitIndicator3.RollPartWidthPercent = 20F;
             this.waitIndicator3.Size = new System.Drawing.Size(30, 30);
@@ -316,7 +316,7 @@
             this.waitIndicator4.Margin = new System.Windows.Forms.Padding(0);
             this.waitIndicator4.Name = "waitIndicator4";
             this.waitIndicator4.RollingSpeed = 60D;
-            this.waitIndicator4.RollPartBrushType = Concision.Control.RollPartBrushType.Solid;
+            this.waitIndicator4.RollPartBrushType = Concision.Controls.RollPartBrushType.Solid;
             this.waitIndicator4.RollPartLengthPercent = 60F;
             this.waitIndicator4.RollPartWidthPercent = 20F;
             this.waitIndicator4.Size = new System.Drawing.Size(50, 50);
@@ -411,22 +411,22 @@
         }
 
         #endregion
-        private Concision.Control.Scutcheon scutcheon1;
-        private Concision.Control.Scutcheon scutcheon2;
-        private Concision.Control.Button button1;
-        private Concision.Control.Shade shade1;
-        private Concision.Control.Symbol symbol1;
-        private Concision.Control.Combobox combobox1;
-        private Concision.Control.Symbol symbol2;
-        private Concision.Control.Symbol symbol3;
-        private Concision.Control.Line line2;
-        private Concision.Control.Scutcheon scutcheon3;
-        private Concision.Control.WaitIndicator waitIndicator1;
-        private Concision.Control.WaitIndicator waitIndicator2;
-        private Concision.Control.WaitIndicator waitIndicator3;
-        private Concision.Control.WaitIndicator waitIndicator4;
-        private Concision.Control.Button button2;
-        private Concision.Control.Button button3;
+        private Concision.Controls.Scutcheon scutcheon1;
+        private Concision.Controls.Scutcheon scutcheon2;
+        private Concision.Controls.ConcisionButton button1;
+        private Concision.Controls.Shade shade1;
+        private Concision.Controls.Symbol symbol1;
+        private Concision.Controls.ConcisionCombobox combobox1;
+        private Concision.Controls.Symbol symbol2;
+        private Concision.Controls.Symbol symbol3;
+        private Concision.Controls.Line line2;
+        private Concision.Controls.Scutcheon scutcheon3;
+        private Concision.Controls.WaitIndicator waitIndicator1;
+        private Concision.Controls.WaitIndicator waitIndicator2;
+        private Concision.Controls.WaitIndicator waitIndicator3;
+        private Concision.Controls.WaitIndicator waitIndicator4;
+        private Concision.Controls.ConcisionButton button2;
+        private Concision.Controls.ConcisionButton button3;
     }
 }
 

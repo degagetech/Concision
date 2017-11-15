@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Concision.Control
+namespace Concision.Controls
 {
     public abstract class YourControl : BaseControl
     {

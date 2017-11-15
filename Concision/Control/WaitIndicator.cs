@@ -5,7 +5,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Timers;
 using Timer = System.Timers.Timer;
-namespace Concision.Control
+namespace Concision.Controls
 {
     /// <summary>
     /// 滚动部分的笔刷类型

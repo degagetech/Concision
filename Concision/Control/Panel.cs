@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
 
-namespace Concision.Control
+namespace Concision.Controls
 {
     public class Panel : System.Windows.Forms.Panel
     {

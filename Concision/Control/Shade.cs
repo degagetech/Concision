@@ -6,7 +6,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-namespace Concision.Control
+namespace Concision.Controls
 {
     public class Shade : BaseControl
     {

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.line1 = new Concision.Control.Line();
-            this.windowsButton3 = new Concision.Control.WindowsButton();
-            this.windowsButton2 = new Concision.Control.WindowsButton();
-            this.windowsButton1 = new Concision.Control.WindowsButton();
+            this.line1 = new Concision.Controls.Line();
+            this.windowsButton3 = new Concision.Controls.WindowsButton();
+            this.windowsButton2 = new Concision.Controls.WindowsButton();
+            this.windowsButton1 = new Concision.Controls.WindowsButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@
             this.windowsButton3.TabIndex = 5;
             this.windowsButton3.Text = "";
             this.windowsButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.windowsButton3.WindowsButtonType = Concision.Control.WindowsButtonType.Minimize;
+            this.windowsButton3.WindowsButtonType = Concision.Controls.WindowsButtonType.Minimize;
             // 
             // windowsButton2
             // 
@@ -98,7 +98,7 @@
             this.windowsButton2.TabIndex = 4;
             this.windowsButton2.Text = "";
             this.windowsButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.windowsButton2.WindowsButtonType = Concision.Control.WindowsButtonType.Maximize;
+            this.windowsButton2.WindowsButtonType = Concision.Controls.WindowsButtonType.Maximize;
             // 
             // windowsButton1
             // 
@@ -121,7 +121,7 @@
             this.windowsButton1.TabIndex = 3;
             this.windowsButton1.Text = "";
             this.windowsButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.windowsButton1.WindowsButtonType = Concision.Control.WindowsButtonType.Close;
+            this.windowsButton1.WindowsButtonType = Concision.Controls.WindowsButtonType.Close;
             // 
             // flowLayoutPanel1
             // 
@@ -149,10 +149,10 @@
 
         #endregion
 
-        protected Control.WindowsButton windowsButton3;
-        protected Control.WindowsButton windowsButton2;
-        protected Control.WindowsButton windowsButton1;
-        protected Control.Line line1;
+        protected Controls.WindowsButton windowsButton3;
+        protected Controls.WindowsButton windowsButton2;
+        protected Controls.WindowsButton windowsButton1;
+        protected Controls.Line line1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

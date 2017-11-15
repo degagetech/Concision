@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using Concision.Editor;
-namespace Concision.Control
+namespace Concision.Controls
 {
 
 

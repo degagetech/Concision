@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Concision;
-namespace Concision.Control
+namespace Concision.Controls
 {
     
     public class BaseControl : System.Windows.Forms.Control

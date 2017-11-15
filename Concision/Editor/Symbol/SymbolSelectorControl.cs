@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Windows.Forms.Design;
-using Concision.Control;
+using Concision.Controls;
 using System.Diagnostics;
 
 namespace Concision.Editor

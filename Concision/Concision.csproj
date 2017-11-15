@@ -52,11 +52,57 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimationExecutor.cs" />
+    <Compile Include="Animations\AnimationDirection.cs" />
+    <Compile Include="Animations\AnimationManager.cs" />
+    <Compile Include="Animations\Animations.cs" />
+    <Compile Include="ColorScheme.cs" />
+    <Compile Include="ConcisionManager.cs" />
+    <Compile Include="Control\ConcisionCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionDivider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionFlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionRaisedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionSingleLineTextField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ConcisionTabSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawHelper.cs" />
+    <Compile Include="IConcisionControl.cs" />
     <Compile Include="TextDescriptionAttribute.cs" />
     <Compile Include="Control\AnimationButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Control\Combobox.cs">
+    <Compile Include="Control\ConcisionCombobox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Control\DataGridView.cs">
@@ -108,7 +154,7 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\Button.cs">
+    <Compile Include="Control\ConcisionButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Control\BaseControl.cs">
