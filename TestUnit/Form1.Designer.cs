@@ -101,6 +101,7 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.button1.EnabledMousePierce = false;
             this.button1.EnabledWaitingClick = false;
@@ -150,6 +151,7 @@
             // 
             this.combobox1.AutoDropDownHeight = true;
             this.combobox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combobox1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.combobox1.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.combobox1.DropDownHeight = 0;
             this.combobox1.DropDownWidth = 220;
@@ -238,7 +240,7 @@
             // 
             // waitIndicator1
             // 
-            this.waitIndicator1.CurrentAngle = 15F;
+            this.waitIndicator1.CurrentAngle = 285F;
             this.waitIndicator1.EachRollingAngle = 15F;
             this.waitIndicator1.EnabledMousePierce = false;
             this.waitIndicator1.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.DarkHorizontal;
@@ -260,7 +262,7 @@
             // 
             // waitIndicator2
             // 
-            this.waitIndicator2.CurrentAngle = 240F;
+            this.waitIndicator2.CurrentAngle = 150F;
             this.waitIndicator2.EachRollingAngle = 15F;
             this.waitIndicator2.EnabledMousePierce = false;
             this.waitIndicator2.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.WideUpwardDiagonal;
@@ -282,7 +284,7 @@
             // 
             // waitIndicator3
             // 
-            this.waitIndicator3.CurrentAngle = 45F;
+            this.waitIndicator3.CurrentAngle = 315F;
             this.waitIndicator3.EachRollingAngle = 15F;
             this.waitIndicator3.EnabledMousePierce = false;
             this.waitIndicator3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -305,7 +307,7 @@
             // 
             // waitIndicator4
             // 
-            this.waitIndicator4.CurrentAngle = 255F;
+            this.waitIndicator4.CurrentAngle = 180F;
             this.waitIndicator4.EachRollingAngle = 15F;
             this.waitIndicator4.EnabledMousePierce = false;
             this.waitIndicator4.HatchBrushStyle = System.Drawing.Drawing2D.HatchStyle.DarkHorizontal;
@@ -328,6 +330,7 @@
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button2.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.button2.EnabledMousePierce = false;
             this.button2.EnabledWaitingClick = false;
@@ -346,6 +349,7 @@
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button3.DownColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.button3.EnabledMousePierce = false;
             this.button3.EnabledWaitingClick = false;

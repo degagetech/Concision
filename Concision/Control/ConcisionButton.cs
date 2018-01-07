@@ -10,6 +10,10 @@ namespace Concision.Controls
 {
     public class ConcisionButton : BaseControl
     {
+        public DialogResult DialogResult
+        {
+            get; set;
+        }
         /// <summary>
         /// 按钮处于等待状态时是否触发点击事件
         /// </summary>

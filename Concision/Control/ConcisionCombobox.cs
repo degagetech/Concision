@@ -97,6 +97,13 @@ namespace Concision.Controls
             {
                 return this.SelectedItem?.Value;
             }
+            set
+            {
+                if (this.SelectedItem != null)
+                {
+                    this.SelectedItem.Value = value;
+                }
+            }
         }
         /// <summary>
         /// 是否根据条目数量自动调整下拉框的高度
@@ -207,7 +214,7 @@ namespace Concision.Controls
         /********************************/
 
         private ToolStripDropDown _toolStripDropDown = new ToolStripDropDown();
-        private Int32 _heightExtra = 5;
+        private Int32 _heightExtra = 2;
         private const String SymbolDown = "▼";
         private SizeF _symbolSizeCache = SizeF.Empty;
         private Single _symbolSize = 10F;
@@ -242,12 +249,13 @@ namespace Concision.Controls
         private void RecalcuteDropDownHeight()
         {
             Int32 height = 0;
-            this.DropDownHeight = 0;
+            this._toolStripDropDown.Height = 0;
             foreach (ComboboxToolStripItem item in this._toolStripDropDown.Items)
             {
-                height = item.Height + this._heightExtra;
+                //height = item.Height + this._heightExtra;
+                height += item.Height + item.Margin.Top + item.Margin.Bottom;
             }
-            this.DropDownHeight = height;
+            this._toolStripDropDown.Height = height + this._heightExtra;
         }
         /// <summary>
         /// 向下拉框添加具有指定文本，值，名称的Item
@@ -257,7 +265,7 @@ namespace Concision.Controls
             ComboboxToolStripItem item = new ComboboxToolStripItem();
             item.Padding = new Padding();
             item.Text = text;
-         
+
             item.Size = new Size(this._toolStripDropDown.Width, this.ItemHeight);
             item.AutoSize = false;
             item.Value = value;
@@ -341,7 +349,7 @@ namespace Concision.Controls
         {
             if (this.AutoDropDownHeight)
             {
-                this._toolStripDropDown.Height += e.Item.Height + this._heightExtra;
+                this.RecalcuteDropDownHeight();
             }
         }
     }
@@ -373,7 +381,7 @@ namespace Concision.Controls
 
         public ComboboxToolStripItem()
         {
-            this.Margin = new Padding(1,0,1,0);
+            this.Margin = new Padding(1, 0, 1, 0);
             this.BackColor = this.NormalColor;
             this.ForeColor = this.NormalForeColor;
         }
@@ -385,7 +393,7 @@ namespace Concision.Controls
         }
         //protected override void OnMouseHover(EventArgs e)
         //{
-       
+
         //    base.OnMouseHover(e);
         //}
         protected override void OnMouseLeave(EventArgs e)
