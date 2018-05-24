@@ -215,6 +215,8 @@ namespace Concision.Controls
             {
                 case RollPartBrushType.Hatch:
                     {
+                        annulusBrush.Dispose();
+                        annulusBrush = null;
                         annulusBrush = new HatchBrush(this.HatchBrushStyle, this.WaitIndicatorColor);
                     }
                     break;
